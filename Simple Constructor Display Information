@@ -1,0 +1,30 @@
+package com.mycompany.teammarkbinjun;
+public class TeamMarkBinJun {
+
+    private String name;
+    private int age;
+    private String gender;
+    private String number;
+    
+    public TeamMarkBinJun(String name, int age, String gender, String number) {
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+        this.number = number;        
+    }
+    
+    public void displayInfo() {
+        System.out.println("Name: " + name + ", Age: " + age + ", Gender: " + gender + ", Number: " + number);
+    }
+    
+    public static void main(String[] args) {
+        TeamMarkBinJun person1 = new TeamMarkBinJun("Vhinz", 19, "Male", "09369078980");
+        person1.displayInfo();
+        
+        TeamMarkBinJun person2 = new TeamMarkBinJun("Bim", 18, "Male", "09695933822");
+        person2.displayInfo();
+        
+        TeamMarkBinJun person3 = new TeamMarkBinJun("Jay", 18,  "Male", "09260228275");
+        person3.displayInfo();
+    }
+}
