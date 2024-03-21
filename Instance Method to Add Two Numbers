@@ -1,0 +1,23 @@
+package com.mycompany.teambinjunmark;
+public class TeamBinJunMark {
+    private int result;
+    
+    public TeamBinJunMark(){
+        result = 0;           
+    }
+    
+    public void add (int num1, int num2){
+        result = num1 + num2;
+    }
+    
+    public int getResult(){
+        return result;
+    }
+    
+    public static void main(String[] args) {
+        TeamBinJunMark calc = new TeamBinJunMark();
+        calc.add(5, 3);
+        int sum = calc.getResult();
+        System.out.println("Sum; " + sum);
+    }
+}
