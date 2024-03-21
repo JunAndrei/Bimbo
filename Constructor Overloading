@@ -1,0 +1,42 @@
+package com.mycompany.jaymark;
+import java.util.Scanner;
+public class JayMark {
+         private int length;
+         private int width;
+      
+         public JayMark(){
+             length = 0;
+             width = 0;
+         }
+         
+         public JayMark(int length, int width) {
+             this.length = length;
+             this.width = width;
+         }
+         
+         public void displayArea() {
+             int area = length * width;
+             System.out.println("Area of the rectangle: " + area);
+         }
+         
+         public static void main(String[] args) {
+             Scanner sc = new Scanner(System.in);
+             System.out.println("Enter length: ");
+             int num1 = sc.nextInt(); sc.nextLine();
+             System.out.println("Enter width: ");
+             int num2 = sc.nextInt(); sc.nextLine();
+             
+             JayMark rectangle1 = new JayMark(num1, num2);
+             rectangle1.displayArea();
+             
+             System.out.println("Enter length: ");
+             int num3 = sc.nextInt(); sc.nextLine();
+             System.out.println("Enter width: ");
+             int num4 = sc.nextInt(); sc.nextLine();
+             
+             JayMark rectangle2 = new JayMark(num3, num4);
+             rectangle2.displayArea();
+         }       
+}
+
+    
