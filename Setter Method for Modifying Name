@@ -1,0 +1,33 @@
+package com.mycompany.jjf;
+
+public class JJF {
+
+    private String name;
+    private int age;
+    
+    public JJF(String name,int age) {
+        this.name = name;
+        this.age = age;
+    }
+    
+    public String getName() {
+        return name;
+    }
+    
+    public int getAge() {
+        return age;
+    }
+    
+    public void setName(String newName,int newAge) {
+        this.name = newName;
+        this.age = newAge;
+    }
+   
+    public static void main(String[] args) {
+        JJF person = new JJF("Vhinz", 19);
+        System.out.println("Original Name: " + person.getName() + " Original Age: " + person.getAge());
+        
+        person.setName("Francis", 19);
+        System.out.println("Modified Name: " + person.getName() +  " Modified Age: " + person.getAge());
+    }
+}
