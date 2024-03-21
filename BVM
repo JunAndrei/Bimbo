@@ -1,0 +1,31 @@
+package com.mycompany.bvm;
+import java.util.Scanner;
+public class BVM {
+    public static void main(String[] args) {
+        Scanner vbm = new Scanner(System.in);
+        System.out.println("Enter 1 for Celcius");
+        System.out.println("Enter 2 for Farenheit");
+        System.out.print("Enter a number: ");
+        double value = vbm.nextDouble();
+        
+        if(value == 1){
+            System.out.println("Please enter value in celcius: ");
+            Double celcius = vbm.nextDouble();
+            
+            Double calc = celcius * 9 / 5 + 32;
+            
+            System.out.print("Your celcius is " + calc);
+        } 
+        else if(value == 2){
+        System.out.println("Please enter value in fahrenheit: ");
+            Double fahrenheit = vbm.nextDouble();
+            
+            Double res = fahrenheit - 32 * 5 / 9;
+            
+            System.out.print("Your farenheit is " + res);
+        } 
+        else{
+            System.out.print("You close the converter");
+        }   
+    }
+    }
