@@ -1,0 +1,17 @@
+package com.mycompany.teamjunbinmark;
+public class TeamJunBinMark {
+
+    public static int add(int a, int b) {
+        return a + b; 
+    }
+    public static void printResult(int result) {
+        System.out.println("Result: " + result);
+    }
+    public static void main(String[] args) {
+        int num1 = add(8, 5);
+        int num2 = add(5, 8);
+        printResult(num1 + num2 );
+    }
+}    
+
+
