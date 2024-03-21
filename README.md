@@ -1,2 +1,2 @@
 # Bimbo
-Just Code
+//Just Code
