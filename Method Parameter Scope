@@ -1,0 +1,9 @@
+package ben5;
+public class Ben5 {
+    public static void printValue(int param) {
+        System.out.println("Method parameter: " + param);
+    }
+    public static void main(String[] args) {
+        printValue(50);
+    }
+}
