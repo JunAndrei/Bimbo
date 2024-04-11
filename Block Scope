@@ -1,0 +1,19 @@
+package ben4;
+public class Ben4 {
+
+    public static void main(String[] args) {
+        int x = 10;
+        {
+            int y = 20;
+            System.out.println(y);
+        }
+        System.out.println(x);
+        
+        String car = "Honda";
+        {
+            String name = "Vhinz";
+            System.out.println(name);
+        }
+        System.out.println(car);
+    }   
+}
