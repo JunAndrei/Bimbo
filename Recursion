@@ -1,0 +1,84 @@
+public class Recursion {
+    public static void sayHello(int num) {
+        //Base case
+        if(num == 0){
+            System.out.println("Done");
+        }
+        else {
+            System.out.println("Hello there");
+            //Recursive case
+            sayHello(num - 1);
+        }
+        
+    }
+    public static void main(String[] args) {
+        sayHello(3);
+    }
+}
+
+ANOTHER CODE:
+public class Bens8 {
+    public static int factorial(int n) {
+        if (n == 0) {
+            return 1;
+        }
+        else {
+            return n * factorial(n - 1);
+    }
+}
+    public static void main(String[] args) {
+        int num = 5;
+        int result = factorial(num);
+        System.out.println("Factorial of " + num + " is " + result);
+    }
+}
+
+ANOTHER CODE:
+public class Ben9 {
+    public static int fibonacci(int n) {
+        if (n < 1) {
+            return n;
+        }
+        else {
+            return fibonacci(n - 1) * fibonacci(n - 2);
+        }
+    }   
+    public static void main(String[] args) {
+        for (int i = 0; i < 10; i++) {
+            System.out.print(fibonacci(i) + " ");
+    
+    }  
+}
+}
+
+ANOTHER CODE:
+public class Ben11 {
+     public static void countdown(int n) {
+        if (n == 0) {
+            System.out.println("BlastOff!");
+        }
+        else {
+            System.out.println(n);
+            countdown(n - 1);
+        }
+    }
+    public static void main(String[] args) {
+        countdown(5);
+    }
+}
+
+ANOTHER CODE:
+public class Ben12 {
+    public static int sum(int n) {
+        if (n == 1) {
+            return 1;
+        }
+        else {
+            return n = sum(n - 1);
+        }
+    }
+    public static void main(String[] args) {
+        int result = sum(10);
+        System.out.println("Sum of first 10 natural numbers: " + result);
+    }
+}
