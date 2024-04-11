@@ -1,0 +1,22 @@
+package ben;
+public class Ben {
+  
+    static int classScopedVariable = 20;
+    
+    public static void main(String[] args) {
+        System.out.println("Class-scoped variable: " + Ben.classScopedVariable);
+
+    }
+}
+
+ANOTHER CODE:
+
+package ben1;
+public class Ben1 {
+
+    static String classScopedVariable = "Vhinz";
+    
+    public static void main(String[] args) {
+        System.out.println("Class-scoped Variable: " + Ben1.classScopedVariable);
+    }
+}
