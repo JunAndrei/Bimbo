@@ -1,0 +1,13 @@
+package ben2;
+public class Ben2 {
+    
+    int instanceScopedVariable = 20;
+    
+    public static void main(String[] args) {
+        Ben2 obj1 = new Ben2();
+        Ben2 obj2 = new Ben2();
+        
+        System.out.println("Instance-Scoped Varianble: " + obj1.instanceScopedVariable);
+        System.out.println("Instance-Scoped Varianble: " + obj2.instanceScopedVariable);
+    }
+}
